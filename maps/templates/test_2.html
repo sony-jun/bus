@@ -5,7 +5,7 @@
     <script>
       var mapContainer = document.getElementById('map'), // 지도를 표시할 div
               mapOption = {
-                center: new kakao.maps.LatLng(35.550701, 129.270667), // 지도의 중심좌표
+                center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
                 level: 3 // 지도의 확대 레벨
               };
     
@@ -16,23 +16,18 @@
       var geocoder = new kakao.maps.services.Geocoder();
     
       var positions = [
-        
         {
-          title: '달동현대2차아파트',
-          address: '울산 남구 삼산로 156번길 5-74'
+          title: '카카오',
+          address: '제주특별자치도 제주시 첨단로 242'
         },
         {
-          title: '삼환아르누보아파트',
-          address: '울산 남구 삼산로 87'
+          title: '생태연못',
+          address: '경기 남양주시 조안면 능내리 50'
         },
         {
-          title: '남목현대아파트',
-          address: '울산 동구 남목12길 17'
-        },
-        {
-          title: '구영풍경채',
-          address: '울산 울주군 구영로 75-26'
-        },
+          title: '근린공원',
+          address: '경기 남양주시 별내면 청학로68번길 40'
+        }
       ];
     
       // 지도를 재설정할 범위정보를 가지고 있을 LatLngBounds 객체를 생성합니다
